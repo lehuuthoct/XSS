@@ -36,6 +36,26 @@ class Timer extends Component {
     return (
       <div className="Pomodoro">
         Timer
+        {/* init message */ }
+        {/* init timer  */ }
+        {/* init types */ }
+        <div className='types'>
+          <button
+            className='start'
+          >
+            Start Working
+        </button>
+          <button
+            className='short'
+          >
+            Short Break
+        </button>
+          <button
+            className='long'
+          >
+            Long Break
+        </button>
+        </div>
       </div>
     )
   }
