@@ -41,6 +41,14 @@ class Timer extends Component {
     });
   }
 
+  restartInterval = () => {
+    // clear interval
+    clearInterval(this.interval);
+
+    // execute counting down every 1s
+    this.interval = setInterval(this.countDown, 1000);
+  }
+
   countDown = () => {
     // display 'Buzz' when time reaches 0
     if (this.state.time === 0) {
