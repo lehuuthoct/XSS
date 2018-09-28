@@ -5,7 +5,7 @@ import Content from "./layout/Content";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 // import fake data
-import { NoteList1 } from "./Notes/data";
+import { NoteList1, NoteList2 } from "./Notes/data";
 import Notes from "./Notes/Notes";
 
 class App extends Component {
@@ -16,11 +16,20 @@ class App extends Component {
     };
   }
 
+  componentDidMount() {
+    //   add noteList2 after 10s
+    setTimeout(() => {
+      this.setState({
+        notes: [...this.state.notes, ...NoteList2]
+      });
+    }, 5000);
+  }
+
   render() {
     // this.testES6Features();
 
     const headerInfo = {
-      title: "Pomodoro Timer",
+      title: "Notes Application",
       url: "http://localhost:3000"
     };
 
