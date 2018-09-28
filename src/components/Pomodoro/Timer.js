@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './Timer.css';
 
 class Timer extends Component {
 
@@ -119,10 +120,12 @@ class Timer extends Component {
         <div className={ `alert ${type}` }>
           { message }
         </div>
+
         {/* init timer  */ }
         <div className="timer">
           { this.displayTimer(time) }
         </div>
+
         {/* init types */ }
         <div className='types'>
           <button

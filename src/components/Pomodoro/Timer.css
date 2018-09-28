@@ -1,0 +1,7 @@
+.Pomodoro {
+  padding: 50px;
+}
+
+.Pomodoro .timer {
+  font-weight: bold;
+}
