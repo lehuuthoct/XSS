@@ -10,6 +10,11 @@ class Coins extends Component {
     }
   }
 
+  // only update UI if dollars are multiples of 10
+  shouldComponentUpdate(props, state) {
+    return state.dollars % 10 === 0;
+  }
+
   handleOnChange = e => {
     this.setState({
       dollars: Number(e.target.value || 0)
