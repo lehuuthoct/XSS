@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Coins.css';
 
 class Coins extends Component {
 
