@@ -1,11 +1,11 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 import './App.css';
+import Coins from './Coins/Coins';
 import ErrorBoundary from './ErrorBoundary';
 import Content from './layout/Content';
 import Footer from './layout/Footer';
 import Header from './layout/Header';
-import Timer from './Pomodoro/Timer';
 
 class App extends Component {
 
@@ -167,7 +167,9 @@ class App extends Component {
                     <Content>
                         {/* <Home /> */ }
                         {/* <Todo /> */ }
-                        <Timer />
+                        {/* <Timer /> */ }
+
+                        <Coins />
 
                     </Content>
 
