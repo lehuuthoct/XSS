@@ -1,6 +1,6 @@
 import moment from "moment";
 import React, { Component } from "react";
-import Notes from "./Notes/Notes";
+import "./Notes.css";
 
 const formatTime = "YYYY-MM-DD HH:mm:ss";
 
