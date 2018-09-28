@@ -4,4 +4,13 @@
 
 .Pomodoro .timer {
   font-weight: bold;
+  font-size: 100px;
 }
+
+.Pomodoro .alert {
+  padding: 50px;
+  font-size: 20px;
+  margin-bottom: 20px;
+
+}
+
