@@ -39,6 +39,7 @@ class Timer extends Component {
         message: 'Working!'
       }
     });
+    return this.setTime(this.times.defaultTime);
   }
 
   setTime = newTime => {
