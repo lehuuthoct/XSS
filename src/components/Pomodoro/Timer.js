@@ -99,6 +99,14 @@ class Timer extends Component {
     }
   }
 
+  displayTimer = seconds => {
+    // format time to mm:ss
+    const m = Math.floor(seconds % 3600 / 60);
+    const s = Math.floor(seconds % 3600 % 60);
+    const formattedMsg = ` ${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+    return formattedMsg;
+  }
+
 
   render() {
     const { alert: { message, type }, time } = this.state;
