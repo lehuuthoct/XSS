@@ -7,7 +7,13 @@ class Chart extends Component {
     this.updateChart();
   }
 
+  componentDidUpdate() {
+    // update chart when receiving new props
+    this.updateChart();
+  }
+
   updateChart() {
+    console.log("Chart", this.props);
     c3.generate({
       bindto: "#chart",
       data: {
