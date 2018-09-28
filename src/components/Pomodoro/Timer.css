@@ -18,6 +18,11 @@
   box-shadow: 0 1px 0px rgba(255, 255, 255, 0.5) inset;  /* left top */
 }
 
+.Pomodoro button.start {
+  background-color: #5da423;
+  border: 1px solid #396516;
+}
+
 .Pomodoro .timer {
   font-weight: bold;
   font-size: 100px;
