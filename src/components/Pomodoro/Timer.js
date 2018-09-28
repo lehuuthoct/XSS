@@ -41,6 +41,14 @@ class Timer extends Component {
     });
   }
 
+  setTime = newTime => {
+    this.restartInterval();
+
+    this.setState({
+      time: newTime
+    })
+  }
+
   restartInterval = () => {
     // clear interval
     clearInterval(this.interval);
