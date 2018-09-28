@@ -53,6 +53,17 @@ class Timer extends Component {
     return this.setTime(this.times.shortBreak);
   }
 
+  setTimeForLongBreak = () => {
+    this.setState({
+      alert: {
+        type: 'longBreak',
+        message: 'Taking a Long break'
+      }
+    });
+
+    return this.setTime(this.times.longBreak);
+  }
+
   setTime = newTime => {
     this.restartInterval();
 
