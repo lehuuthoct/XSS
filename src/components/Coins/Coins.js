@@ -36,6 +36,10 @@ class Coins extends Component {
 
         {/* answer */ }
         <div className='answer'>
+          <p>Crypto coin price: $10</p>
+          <p>
+            You can buy <strong> { this.state.dollars / 10 }</strong> coins
+          </p>
 
         </div>
 
