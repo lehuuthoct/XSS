@@ -5,7 +5,7 @@ import ErrorBoundary from './ErrorBoundary';
 import Content from './layout/Content';
 import Footer from './layout/Footer';
 import Header from './layout/Header';
-import Todo from './Todo/Todo';
+import Timer from './Pomodoro/Timer';
 
 class App extends Component {
 
@@ -151,7 +151,7 @@ class App extends Component {
     }
 
     render() {
-        // this.testES6Features();
+        // this.testES6Features();  
 
         const headerInfo = {
             title: 'Testing React Redux ',
@@ -166,7 +166,8 @@ class App extends Component {
 
                     <Content>
                         {/* <Home /> */ }
-                        <Todo />
+                        {/* <Todo /> */ }
+                        <Timer />
 
                     </Content>
 
