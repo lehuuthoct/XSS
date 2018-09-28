@@ -101,10 +101,15 @@ class Timer extends Component {
 
 
   render() {
+    const { alert: { message, type }, time } = this.state;
+
     return (
       <div className="Pomodoro">
         Timer
         {/* init message */ }
+        <div className={ `alert ${type}` }>
+          { message }
+        </div>
         {/* init timer  */ }
         {/* init types */ }
         <div className='types'>
