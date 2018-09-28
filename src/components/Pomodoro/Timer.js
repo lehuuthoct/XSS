@@ -32,6 +32,9 @@ class Timer extends Component {
     })
   }
 
+  setTimeForWork = () => {
+  }
+
   render() {
     return (
       <div className="Pomodoro">
