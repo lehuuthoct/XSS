@@ -25,6 +25,12 @@ class App extends Component {
     }, 5000);
   }
 
+  componentWillUnmount() {
+    console.log("unmount Root component");
+    document.body.style = "background: deeppink";
+    document.getElementById("unmountMessage").style.color = "white";
+  }
+
   render() {
     // this.testES6Features();
 

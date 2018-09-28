@@ -16,6 +16,7 @@ const unmountBtn = document.getElementById("unmount");
 function unmount() {
   ReactDOM.unmountComponentAtNode(rootComponent);
   msgNode.style.display = "block";
+  unmountBtn.style.display = "none";
 }
 unmountBtn.addEventListener("click", unmount);
 
