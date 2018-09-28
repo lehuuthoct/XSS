@@ -36,7 +36,7 @@ class Timer extends Component {
   setTimeForWork = () => {
     this.setState({
       alert: {
-        type: 'working',
+        type: 'work',
         message: 'Working!'
       }
     });

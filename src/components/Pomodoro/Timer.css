@@ -11,6 +11,10 @@
   padding: 50px;
   font-size: 20px;
   margin-bottom: 20px;
-
 }
+
+.Pomodoro .alert .work {
+  background: #5da423
+}
+
 
