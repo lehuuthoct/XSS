@@ -10,6 +10,12 @@ class Coins extends Component {
     }
   }
 
+  handleOnChange = e => {
+    this.setState({
+      dollars: Number(e.target.value || 0)
+    });
+  }
+
   render() {
     return (
       <div className='Coins'>
