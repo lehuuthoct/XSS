@@ -16,3 +16,13 @@
   padding: 0;
   margin: 20px 0px 50px; /* top right */
 }
+
+.Notes ul li {
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  margin-bottom: -1px;
+  padding: 20px; /* top rbl */
+  border: 1px solid #ddd;
+  justify-content: space-between;
+}
