@@ -82,6 +82,8 @@ class Timer extends Component {
 
   countDown = () => {
     // display 'Buzz' when time reaches 0
+    console.log(this.state.time);
+
     if (this.state.time === 0) {
       this.setState({
         alert: {
