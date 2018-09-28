@@ -4,11 +4,16 @@ import ErrorBoundary from "./ErrorBoundary";
 import Content from "./layout/Content";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
+// import fake data
+import { NoteList1 } from "./Notes/data";
 import Notes from "./Notes/Notes";
 
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      notes: NoteList1
+    };
   }
 
   render() {
@@ -29,7 +34,7 @@ class App extends Component {
             {/* <Todo /> */}
             {/* <Timer /> */}
             {/* <Coins /> */}
-            <Notes />
+            <Notes notes={this.state.notes} />
           </Content>
 
           <Footer />
