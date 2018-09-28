@@ -1,6 +1,18 @@
+import moment from "moment";
 import React, { Component } from "react";
 
+const formatTime = "YYYY-MM-DD HH:mm:ss";
+
 class Notes extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      lastUpdate: moment()
+        .format(formatTime)
+        .toString()
+    };
+  }
   render() {
     const { notes } = this.props;
 
@@ -19,7 +31,7 @@ class Notes extends Component {
         </div>
 
         {/* show last updated message*/}
-        <p>Last Update: </p>
+        <p>Last Update: {this.state.lastUpdate}</p>
       </div>
     );
   }
