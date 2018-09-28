@@ -35,13 +35,13 @@ class Notes extends Component {
         <h1>Notes!</h1>
 
         {/* list notes  */}
-        <div>
+        <ul>
           {notes.map((note, key) => (
             <li key={key}>
               {note.title} - {note.content}
             </li>
           ))}
-        </div>
+        </ul>
 
         {/* show last updated message*/}
         <p>Last Update: {this.state.lastUpdate}</p>
