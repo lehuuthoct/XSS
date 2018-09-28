@@ -154,7 +154,7 @@ class App extends Component {
         // this.testES6Features();  
 
         const headerInfo = {
-            title: 'Testing React Redux ',
+            title: 'Pomodoro Timer',
             url: 'http://localhost:3000'
         };
 
