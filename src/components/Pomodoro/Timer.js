@@ -33,7 +33,33 @@ class Timer extends Component {
   }
 
   setTimeForWork = () => {
+    this.setState({
+      alert: {
+        type: 'working',
+        message: 'Working!'
+      }
+    });
   }
+
+  countDown = () => {
+    // display 'Buzz' when time reaches 0
+    if (this.state.time === 0) {
+      this.setState({
+        alert: {
+          type: 'buz',
+          message: 'Buzzzzz!'
+        }
+      });
+    } else {
+      // decrease time by 1s 
+      this.setState({
+        time: this.state.time - 1
+      });
+    }
+  }
+
+
+
 
   render() {
     return (
