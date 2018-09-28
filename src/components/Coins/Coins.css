@@ -10,3 +10,17 @@
   text-align: left;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
 }
+
+.Coins input {
+  background-color: #fff;
+  border: 1px solid rgb(84, 70, 216);
+  border-radius: 4px;
+  width: 120px;
+  font-size: 14px;
+  line-height: 340px;
+  height: 34px;
+  padding: 6px 12px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  color: #555;
+  
+}
