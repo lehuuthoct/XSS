@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
+import Chart from "./Chart/Chart";
 import ErrorBoundary from "./ErrorBoundary";
 import Content from "./layout/Content";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import { NoteList1, NoteList2 } from "./Notes/data";
-import Notes from "./Notes/Notes";
 
 class App extends Component {
   constructor(props) {
@@ -48,7 +48,8 @@ class App extends Component {
             {/* <Todo /> */}
             {/* <Timer /> */}
             {/* <Coins /> */}
-            <Notes notes={this.state.notes} />
+            {/* <Notes notes={this.state.notes} /> */}
+            <Chart />
           </Content>
 
           <Footer />
