@@ -103,6 +103,7 @@ class Timer extends Component {
     // format time to mm:ss
     const m = Math.floor(seconds % 3600 / 60);
     const s = Math.floor(seconds % 3600 % 60);
+
     const formattedMsg = ` ${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
     return formattedMsg;
   }
@@ -119,6 +120,9 @@ class Timer extends Component {
           { message }
         </div>
         {/* init timer  */ }
+        <div className="timer">
+          { this.displayTimer(time) }
+        </div>
         {/* init types */ }
         <div className='types'>
           <button
