@@ -1,0 +1,25 @@
+.Home {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.Home h1 {
+    font-size: 32px;
+    color: deeppink;
+}
+
+.Home p {
+    text-align: center;
+    color: teal;
+}
+
+.Home a {
+    /* remove underline */
+    text-decoration: none;
+    color: #56D5FA;
+}
+
+.Home a:hover {
+    color: white;
+    background-color: deeppink
+}
