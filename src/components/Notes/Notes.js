@@ -13,6 +13,18 @@ class Notes extends Component {
         .toString()
     };
   }
+
+  componentWillReceiveProps(nextProps) {
+    // check if prop notes has changed
+    if (this.props.notes !== nextProps.notes) {
+      this.setState({
+        lastUpdate: moment()
+          .format(formatTime)
+          .toString()
+      });
+    }
+  }
+
   render() {
     const { notes } = this.props;
 
