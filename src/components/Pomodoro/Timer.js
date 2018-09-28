@@ -42,6 +42,17 @@ class Timer extends Component {
     return this.setTime(this.times.defaultTime);
   }
 
+  setTimeForShortBreak = () => {
+    this.setState({
+      alert: {
+        type: 'shortBreak',
+        message: 'Taking a short break'
+      }
+    });
+
+    return this.setTime(this.times.shortBreak);
+  }
+
   setTime = newTime => {
     this.restartInterval();
 
@@ -74,8 +85,6 @@ class Timer extends Component {
       });
     }
   }
-
-
 
 
   render() {
