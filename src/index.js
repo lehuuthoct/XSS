@@ -4,8 +4,20 @@ import App from "./components/App";
 import "./index.css";
 import registerServiceWorker from "./registerServiceWorker";
 
-// hide unmount message
-document.getElementById("unmountMessage").style.display = "none";
+// init root component
+const rootComponent = document.getElementById("root");
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// hide unmount message
+const msgNode = document.getElementById("unmountMessage");
+msgNode.style.display = "none";
+
+// init unmount button
+const unmountBtn = document.getElementById("unmount");
+function unmount() {
+  ReactDOM.unmountComponentAtNode(rootComponent);
+  msgNode.style.display = "block";
+}
+unmountBtn.addEventListener("click", unmount);
+
+ReactDOM.render(<App />, rootComponent);
 registerServiceWorker();
