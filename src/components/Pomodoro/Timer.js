@@ -10,7 +10,7 @@ class Timer extends Component {
         type: '',
         message: ''
       },
-      timer: 0
+      time: 0
     }
     // init times for work, short|long break
     this.times = {
@@ -21,7 +21,15 @@ class Timer extends Component {
   }
 
   componentDidMount() {
+    // init default time for component
+    this.setDefaultTime();
+  }
 
+  setDefaultTime() {
+    // init default time to 25 min
+    this.setState({
+      time: this.times.defaultTime
+    })
   }
 
   render() {
