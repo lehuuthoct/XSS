@@ -27,7 +27,7 @@ class App extends Component {
 
   componentWillUnmount() {
     console.log("unmount Root component");
-    document.body.style = "background: deeppink";
+    document.body.style = "background: deeppink; text-align: center";
     document.getElementById("unmountMessage").style.color = "white";
   }
 
