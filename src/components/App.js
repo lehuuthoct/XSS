@@ -4,7 +4,6 @@ import ErrorBoundary from "./ErrorBoundary";
 import Content from "./layout/Content";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
-// import fake data
 import { NoteList1, NoteList2 } from "./Notes/data";
 import Notes from "./Notes/Notes";
 
