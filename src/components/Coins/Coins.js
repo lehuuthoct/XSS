@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 
 class Coins extends Component {
+
+  constructor() {
+    super();
+    // init initial state
+    this.state = {
+      dollars: 0
+    }
+  }
+
   render() {
     return (
       <div className='Coins'>
