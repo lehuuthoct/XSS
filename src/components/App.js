@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import Animation from "./Animation/Animation";
 import "./App.css";
-import ChartContainer from "./Chart/ChartContainer";
 import ErrorBoundary from "./ErrorBoundary";
 import Content from "./layout/Content";
 import Footer from "./layout/Footer";
@@ -37,7 +37,8 @@ class App extends Component {
 
     const headerInfo = {
       //   title: "Notes Application",
-      title: "Chart Application",
+      //   title: "Chart Application",
+      title: "Animation Application",
       url: "http://localhost:3000"
     };
 
@@ -52,8 +53,8 @@ class App extends Component {
             {/* <Timer /> */}
             {/* <Coins /> */}
             {/* <Notes notes={this.state.notes} /> */}
-
-            <ChartContainer />
+            {/* <ChartContainer /> */}
+            <Animation />
           </Content>
 
           <Footer />
