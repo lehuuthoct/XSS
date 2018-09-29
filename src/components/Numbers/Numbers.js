@@ -26,9 +26,9 @@ class Numbers extends Component {
 
   render() {
     return (
-      <div>
-        Numbers
+      <div className="Numbers">
         <input
+          type="number"
           placeholder="please enter numbers"
           onChange={this.handleNumberChange}
         />

@@ -1,0 +1,41 @@
+.Numbers {
+  padding: 30px;
+}
+
+/* hide inc/dec buttons*/
+.Numbers input[type="number"]::-webkit-inner-spin-button,
+.Numbers input[type="number"]::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.Numbers input {
+  width: 500px;
+  height: 60x;
+  font-size: 20px;
+  outline: none;
+  border: 1px solid deeppink;
+  padding: 10px;
+}
+
+.Numbers ul {
+  list-style: none;
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.Numbers ul li {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+}
+
+.Numbers ul li:first-child {
+  border-top: none;
+}
+
+.Numbers ul li:last-child {
+  border-bottom: 1px solid #ccc;
+}
