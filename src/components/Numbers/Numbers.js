@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Numbers.css";
 import Result from "./Result";
 
 class Numbers extends Component {
