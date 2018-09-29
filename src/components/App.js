@@ -38,7 +38,7 @@ class App extends Component {
     const headerInfo = {
       //   title: "Notes Application",
       //   title: "Chart Application",
-      title: "Animation Application",
+      title: "Numbers Application",
       url: "http://localhost:3000"
     };
 
