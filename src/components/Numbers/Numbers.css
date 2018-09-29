@@ -20,8 +20,8 @@
 
 .Numbers ul {
   list-style: none;
-  width: 500px;
-  margin: 0 auto;
+  width: 522px;
+  margin: 0 auto; /* ul - default 22px indent */
   padding: 0;
 }
 
