@@ -36,9 +36,7 @@ class App extends Component {
     // this.testES6Features();
 
     const headerInfo = {
-      //   title: "Notes Application",
-      //   title: "Chart Application",
-      title: "Numbers Application",
+      title: "Numbers App",
       url: "http://localhost:3000"
     };
 

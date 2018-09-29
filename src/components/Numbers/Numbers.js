@@ -7,6 +7,11 @@ class Numbers extends Component {
         Numbers
         <input placeholder="please enter numbers" />
         {/* result */}
+        <ul>
+          {this.state.results.map((result, key) => {
+            <Result key={key} result={result} />;
+          })}
+        </ul>
       </div>
     );
   }
