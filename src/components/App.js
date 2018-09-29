@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Animation from "./Animation/Animation";
 import "./App.css";
 import ErrorBoundary from "./ErrorBoundary";
 import Content from "./layout/Content";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
+import Numbers from "./Numbers/Numbers";
 
 class App extends Component {
   constructor(props) {
@@ -54,7 +54,8 @@ class App extends Component {
             {/* <Coins /> */}
             {/* <Notes notes={this.state.notes} /> */}
             {/* <ChartContainer /> */}
-            <Animation />
+            {/* <Animation /> */}
+            <Numbers />
           </Content>
 
           <Footer />
